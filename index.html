@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <h1 >JAVA SCRIPT HANDS ON 3 </h1>
+  <h2>Iteration Statement </h2>
+
+  <ol>
+    <li><h1>Find the number of digits</h1></li>
+    <ul><li>Take a number from the user and print the count of digits in that number.</li></ul>
+    <pre>
+      const Find_Digits = (N) => 
+{
+let ans =0;
+while(N!==0) {
+ans++;
+N=Math.floor(N/10);
+}
+return ans;
+};
+
+
+    </pre>
+
+    <li><h1>Find the Fives.</h1></li>
+    <ul><li>Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.</li></ul>
+    <pre>const Find_Five = (N) => 
+      {
+           let count=0
+        let i
+       while(N!==0)
+       {
+         i=N%10;
+         if(i===5)
+          {
+             count=count+1;
+          }
+             
+          N=Math.floor(N/10);
+       }
+         return count; 
+      };
+      </pre>
+      <li><h1>Find Sum</h1></li>
+      <ul><li>You are given an integer 
+        N
+        , and your task is to find the sum of all the even integers starting from 
+        1
+         upto 
+        N
+         (
+        N
+         inclusive).</li></ul>
+         <pre>
+          const findSum = (n) => {
+             let sum=0
+            for(i=1; i<=n; i++)  {
+              if(i%2===0)
+              sum=sum+i
+            }
+            return(sum)
+              
+          };
+          </pre>
+          <li><h1>Find the sum of the digits of a given number.</h1></li>
+          <ul><li>Write a program that takes a number from the user and get the sum of the digits present in the number.</li></ul>
+          <pre>const Number_Sum = (N) => 
+            {
+                let count=0,r
+              
+             while(N!==0){
+                r=N%10
+                count=count+r
+                N=Math.floor(N/10)
+               
+             }
+             
+             return(count)
+            };
+            
+            </pre>
+            <li><h1>Print the Odds.</h1></li>
+            <ul><li>Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.</li></ul>
+            <pre>
+              const Print_Odd = (N) => 
+{
+  for(let i=2; i<=N; i++)	 {
+ if(i===2)
+ console.log(i)
+ if(i%2!==0)
+ console.log(i);
+}
+};
+            </pre>
+            <li><h1>Print the Pattern.</h1></li>
+            <ul><li>Write a program which ask user for no of lines and print a pattern using an asterik .</li></ul>
+            <pre>
+              const Print_pattern = (N) => 
+{
+
+let star='';
+for(let i=1; i<=N; i++){
+ for(let j=1;j<=i;j++)
+ {
+   star=star+'*';
+ }
+ star=star+"\n";
+}
+
+console.log(star);
+};
+
+            </pre>
+            <li><h1>Check whether a Number is a prime or not.</h1></li>
+            <ul><li>Write a program which takes  a number from user and check whether number is prime number or not a prime number.</li></ul>
+            <pre>
+              const Prime_Check = (N) => 
+{
+ let check=0;
+for(let i=1; i<=N; i++)
+{
+ if(N%i===0){
+   check++;
+ }
+}
+if(check===2){
+return"YES";
+}
+else{
+return 'NO';
+}
+
+};
+
+            </pre>
+            <li><h1>Print Numbers</h1></li>
+            <ul><li>You are given an integer 
+              N
+              , and your task is to print all the integers starting from 
+              1
+               till 
+              N
+               (
+              N
+               inclusive).</li></ul>
+               <pre>
+                const printNumbers = (n) => {
+                  for (i=1;i<=n;i++){
+                    console.log(i)
+                  }
+                   
+                };
+               </pre>
+               <li><h1>Print the Table</h1></li>
+               <ul><li>Write a program which takes a number from user and print the table.</li></ul>
+               <pre>
+                const Print_Table = (N) => 
+{
+    for(let i=1; i<=10; i++){
+      console.log(N + " * " + i + " = " + N*i );
+      
+  }
+};
+
+               </pre>
+
+  </ol>
+</body>
+</html>
